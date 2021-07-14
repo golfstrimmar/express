@@ -11,7 +11,7 @@ $(document).ready(function(e) {
             .addClass("menu-active")
             .append(
                 $(
-                    "<div class='header__info info'><a class='info_phone' href='#!'>+7(000) 123 45 65</a><div class='info_search border-bg'><input type='text' placeholder='Поиск' /><i class='icon-search'></i></div></div>"
+                    "<div class='header__info info'><div class='info_search border-bg'><input type='text' placeholder='SIUNTOS SEKIMAS' /><i class='icon-search'></i></div></div>"
                 )
             );
 

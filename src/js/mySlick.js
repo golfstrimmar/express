@@ -81,7 +81,7 @@ $(Document).ready(function() {
 
     $(".slider-js-3").show().slick({
         dots: false,
-        arrows: false,
+        // arrows: false,
         slidesToShow: 4,
         speed: 800,
         easing: "ease",
@@ -93,6 +93,30 @@ $(Document).ready(function() {
         //  initialSlide: 1,
         pauseOnFocus: true,
         pauseOnHover: true,
+        responsive: [
+
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    variableWidth: false,
+                },
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                    variableWidth: false,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                },
+            },
+        ]
     });
 
 

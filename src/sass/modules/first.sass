@@ -2,7 +2,9 @@
 .first
   min-height: 100vh
   position: relative
-  
+
+.first--about
+  min-height: auto
 .header
   z-index: 1000
   transition: all 0.2s ease-in-out
@@ -123,7 +125,7 @@
     border-radius: 5px
     &>span
       color: white
-  @media (max-width: 767px)
+  @media (max-width: 1000px)
     margin: 0 0 20px 0
     &:last-child
       margin: 0 0 30px 0
@@ -144,6 +146,7 @@
 .menu__link--active
   +bg($active)
   color: white
+  
   
 .menu__link--active:hover 
     color: white
@@ -169,14 +172,12 @@
   @media (max-width: 1000px)
     display: block!important
     transition: all 0.2s ease-in-out
+    margin: 30px 0 0 0
 //-------------
 
 .info_search
   +alic
-
   position: relative
-
-
   input
     border-radius: 58px
     box-shadow: inset 3px 3px 4px 0 rgba(0, 0, 0, 0.19)
@@ -192,7 +193,6 @@
       padding: 0px 0 0px 30px
   input:focus
     padding: 0 0 0px 20px
-
   i
     color: #181818
     font-size: 15px
@@ -484,13 +484,12 @@
 // --------------------------------------
 .bunner--about
   +background-img("/assets/img/about/png/bg.png")
-  max-height: 637px
+  // max-height: 637px
   min-height: 637px
-
   .bunner__body
     padding: 243px 0 0 0
+    // max-height: 637px
   .bunner__title
-    
     h1
       +f700
       font-size: 40px

@@ -1,4 +1,12 @@
 @font-face {
+    font-family: BasisGrotesquePro-Black;
+    src: local(BasisGrotesquePro-Black), url('/assets/fonts/BasisGrotesquePro-Black.woff') format('woff'), url('/assets/fonts/BasisGrotesquePro-Black.ttf') format('truetype'), url('/assets/fonts/BasisGrotesquePro-Black}') format('embedded-opentype'), url('/assets/fonts/BasisGrotesquePro-Black.svg  ') format('svg'), url('/assets/fonts/BasisGrotesquePro-Black.otf  '), url('/assets/fonts/BasisGrotesquePro-Black.eot  ');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
     font-family: BasisGrotesquePro-Bold;
     src: local(BasisGrotesquePro-Bold), url('/assets/fonts/BasisGrotesquePro-Bold.woff') format('woff'), url('/assets/fonts/BasisGrotesquePro-Bold.ttf') format('truetype'), url('/assets/fonts/BasisGrotesquePro-Bold}') format('embedded-opentype'), url('/assets/fonts/BasisGrotesquePro-Bold.svg  ') format('svg'), url('/assets/fonts/BasisGrotesquePro-Bold.otf  '), url('/assets/fonts/BasisGrotesquePro-Bold.eot  ');
     font-weight: 700;

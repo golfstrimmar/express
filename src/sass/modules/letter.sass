@@ -96,3 +96,44 @@
   input[type="checkbox"]:not(:checked) + label:after
     opacity: 0
 
+@media (max-width: 767px) 
+  .letter
+    margin: 0 0 -80px 0
+  .letter__pre-title
+    font-size: 15px
+  .letter__title
+    font-size: 20px
+    margin: 25px 0 
+  .letter__form
+    +fdc 
+    +alic
+    input 
+      width: 100%
+      height: 63px
+      font-size: 12px
+      border-radius: 20px
+      &::placeholder
+        font-size: 12px
+  .letter__form 
+    button 
+      width: 70%
+      height: 63px
+      border-radius: 20px
+      font-size: 12px
+      margin: 10px 0 0 0
+  .letter__form 
+    label
+      font-size: 15px
+  .letter__form input[type=checkbox]:checked+label:before, .letter__form input[type=checkbox]:not(:checked)+label:before 
+    top: 50%
+    width: 20px
+    height: 20px
+    transform: translate(0,-50%)
+
+  .letter__form
+    width: 100%
+
+  .letter__form input[type=checkbox]:checked+label:after, .letter__form input[type=checkbox]:not(:checked)+label:after
+    top: 50%
+    transform: translate(0,-60%) rotate(-45deg)
+    left: 4px
