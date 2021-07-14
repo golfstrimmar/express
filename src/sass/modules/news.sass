@@ -1,0 +1,300 @@
+.news
+  padding: 118px 0 0 0
+.news__body
+.title
+  +jucb	
+  position: relative
+  h2 
+    +f700
+    color: $black
+    position: relative
+    padding: 0 0 7px 0
+    margin: 0 auto 0 0 
+    letter-spacing: .001rem
+    &:after
+      content: ""
+      background-color: $active
+      position: absolute
+      width: 133px
+      height: 2px
+      left: 0%
+      bottom: 0
+      z-index: 2
+.title__description
+  font-size: 20px
+  color: $active
+.slider__item
+  min-width: 343px
+.slider__item--wide
+  min-width: 430px
+.slider__item--wide-1
+  min-width: 397px
+.news
+  &__slider
+    margin: 50px 0 0 0
+    position: relative
+  .slider 
+    .slick-slide
+      margin: 0 0 0 0
+  .slider__item
+    padding: 10px 0
+    height: 100%
+    display: grid !important
+    transition: all 0.2s ease-in-out
+    grid-template-rows: min-max(50%, 1fr)
+    position: relative
+  .slider__body
+    +bg(transparent)
+    
+  .news-slide__body
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    transition:  0.2s ease-in-out!important
+    +fdc
+    +juce
+    padding: 20px 20px 16px 20px
+    position: relative
+    &:after
+        content: ""
+        background-color: rgba(0, 0, 0, 0.3)
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0% 
+        left: 0%
+        z-index: 4
+    &:hover
+      position: relative
+      padding: 36px
+      position: absolute
+      width: 100%
+      height: 433px
+      top: 0
+      left: 0
+      z-index: 100
+      h4 
+        font-size: 20px
+      &:after
+        content: ""
+        background-color: rgba(172, 208, 55, 0.8)
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0% 
+        left: 0%
+        z-index: 10
+      & > .news-slide__description,
+      & > .news-slide__link
+        position: relative
+        bottom: 0
+        z-index: 14
+      & > .news-slide__title
+        z-index: 14
+  .news-slide__title
+    display: inline-block
+    height: auto
+    z-index: 10
+  
+    h4
+      +f700
+      font-size: 15px
+      color: white
+      text-transform: uppercase
+      letter-spacing: .0018rem
+  .news-slide__description
+    font-size: 15px
+    color: white
+    position: absolute
+    bottom: -200px
+    z-index: -4
+    line-height: 19px
+    margin: 31px 0 97px 0
+
+  .slider
+    .slider__body
+      margin: 0 0 0 0
+      height: 433px
+
+  .news-slide__link
+    +f700
+    font-size: 20px
+    color: white
+    position: absolute
+    bottom: -200px
+    z-index: -4
+    transition: all 0s ease-in-out
+    &:hover
+      color: darken($active,20%)
+      transition: all 0.2s ease-in-out
+      i
+        color: darken($active,20%) 
+    i
+      transition: all 0.2s ease-in-out
+      color: white
+      font-size: 14px
+      margin: 0 0 0 10px
+
+ 
+
+@media (min-width: 0px) and (max-width: 1199px) 
+  .title__description
+    font-size: 15px
+
+
+
+
+
+
+
+
+
+.news__decor
+  position: absolute
+  left: 246px
+  bottom: 0
+.news__decor-dotts
+  position: absolute
+  right: -81px
+  bottom: -88px
+.news
+  .slick-arrow
+    width: 33px
+    height: 33px
+    +border(1px, #000)
+    border-radius: 50%
+    transition: all 0.2s ease-in-out
+    top: auto
+    bottom: -80px
+  .slick-prev,.slick-next
+    left: 0
+    right: auto
+    &:after
+      content: "\e901"
+      +center
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 50% 
+      left: 50%
+      z-index: 2
+      color: $black
+      font-size: 14px
+      transition: all 0.2s ease-in-out
+  .slick-prev
+    &:after
+      transform: translate(-50%,-50%) rotate(180deg)
+  .slick-arrow:hover
+    +bg($active)
+    border: none
+    cursor: url("/assets/img/cursor.svg"), pointer
+    &:after
+      color: white
+
+  .slick-next
+    left: 53px
+
+  // .slick-dots
+  //   position: absolute
+  //   top: -130px
+  //   left: 200px
+  //   bottom: auto
+  //   right: auto
+  //   width: 7px
+  //   transform: rotate(180deg)
+  //   +fdc
+    
+  //   li
+  //     margin: 0 0 15px
+  //     font-size: 0
+  //     width: 7px
+  //     height: 7px
+  //     border-radius: 50%
+  //     +bg($active)
+  //     transition: all 0.2s ease-in-out
+  //     padding: 0 0 0 0
+      
+  //     &:last-child
+  //       margin: 0 0 0 0
+  //     button, &:after
+  //       display: none
+  //     &:hover
+  //       cursor: url("/assets/img/cursor.svg"), pointer
+  //   li.slick-active
+  //     +bg(transparent)
+  //     width: 13px
+  //     height: 13px
+  //     transform: translateX(-3px)
+  //     +border(2px ,$active )
+  // .slick-dots:after
+  //   display: none 
+
+
+
+ 
+
+@media (min-width: 768px) and (max-width: 1000px)
+  .news__title 
+    padding: 0 0 5px 0
+    
+    h2
+      font-size: 20px 
+      &:after
+        width: 70%
+  .news__decor 
+    left: 169px
+    height: 87px
+  .news__description 
+    font-size: 15px
+
+ 
+
+ 
+
+@media (min-width: 0px) and (max-width: 1000px) 
+  .news 
+    .slider 
+      .slider__body 
+        height: 340px
+        min-height: 340px
+    .news-slide__title  
+      h4 
+        font-size: 12px
+
+    .news-slide__body:hover 
+      height: 340px
+
+  .news 
+    .news-slide__body:hover 
+      h4 
+        font-size: 14px
+      .news-slide__description
+        font-size: 12px
+
+  .news__decor-dotts
+    width:  100px 
+    right: -49px
+    bottom: -52px
+
+
+
+@media (max-width: 767px) 
+  .news__title 
+    padding: 0 0 5px 0
+    +fdc
+    h2
+      font-size: 20px 
+      &:after
+        width: 70%
+  .news__decor 
+    display: none
+  .news__description 
+    font-size: 15px
+  .news
+    padding: 50px 0 0
+    .news-slide__description 
+      margin: 31px 0 64px
+  .news
+    .news-slide__body,.slider__item--wide-1,.slider__item--wide
+      width: calc(100vw -20px) !important
+      min-width: calc(100vw-20px)!important

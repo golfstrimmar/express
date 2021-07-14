@@ -1,0 +1,67 @@
+.contacts
+  margin: -142px 0 -130px 0
+.contacts__body
+  +grid(0)
+  +columns(1fr 600px)
+.contacts__item
+.contacts__title
+  padding: 8px 0 50px 0
+.contacts-map
+  height: 390px
+.contacts-info
+  +fdc
+.contacts__text
+  color: $black
+.contacts__line
+  +alic
+  margin: 0 0 54px 0
+.contacts__img
+    min-width: 80px
+    height: 72px
+    border-radius: 13px
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15)
+    +center
+    margin: 0 27px 0 0
+    img
+      width: 46px
+      height: 46px
+  
+.contacts-map
+  border-radius: 10px
+  border: solid 2px #acd037
+  iframe
+    +pro
+    border-radius: 10px
+
+@media (min-width: 0px) and (max-width: 1199px)
+  .contacts__text
+    font-size: 15px
+  .contacts__img
+    min-width: 60px
+    height: 60px
+    img
+      width: 30px
+      height: 30px
+
+  .contacts__body
+    +columns(1fr 500px)
+  .contacts__line
+    margin: 0 0 30px 0
+
+
+@media (min-width: 1000px) and (max-width: 1199px) 
+  .contacts__body
+    +columns(1fr 500px)
+
+@media (min-width: 0px) and (max-width: 1000px) 
+  .contacts__body
+    +columns(1fr)
+
+@media (min-width: 0px) and (max-width: 500px) 
+  .contacts__line
+    flex-wrap: nowrap
+
+
+
+
+  

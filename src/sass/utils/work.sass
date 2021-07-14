@@ -1,0 +1,75 @@
+body
+  +bg(white)
+  font-family: 'BasisGrotesquePro-Regular', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 20px
+  color: white
+  letter-spacing: .001rem
+  line-height: 26px
+  
+
+
+
+h1,h2,h3,h4, h5, h6
+  display: inline-block
+  margin: 0 auto
+
+
+._f900
+  font-family: 'BasisGrotesquePro-Black', sans-serif
+  font-weight: 900
+._f700
+  font-family: 'BasisGrotesquePro-Bold', sans-serif
+  font-weight: 700
+._f500
+  font-family: 'BasisGrotesquePro-Medium', sans-serif
+  font-weight: 500
+
+
+
+
+.btn 
+  border: 1px solid transparent
+  outline: none!important
+  transition: all 0.2s ease-in-out
+  diplay: inline-block
+  +center
+
+
+.btn--success
+  color: white
+  +bg($active)
+  &:hover
+    +bg(lighten($active,30%))
+    +border(1px , darken($active,10%)!important)
+    box-shadow: 0px 0px 20px lighten($active,60%)!important
+    color: lighten($active,10%)
+  &:focus
+    +border(1px , darken($active,10%)!important)
+    +bg(lighten($active,10%))
+    box-shadow: 0px 0px 20px lighten($active,60%)!important
+    color: white
+  
+.btn--empty 
+  +bg(white)
+  +border(1px,$active)
+  &:hover
+    +bg($active)
+    +border(1px , $active!important)
+    color: white
+  &:focus
+    +border(1px , darken($active,10%)!important)
+    +bg(lighten($active,10%))
+    box-shadow: 0px 0px 20px lighten($active,60%)!important
+    color: white
+
+input:focus
+  &::placeholder
+    transition: all 0.2s ease-in-out
+    opacity: 0
+input:focus 
+    & + i
+      transition: all 0.2s ease-in-out
+      opacity: 0
+

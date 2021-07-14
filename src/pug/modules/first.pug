@@ -1,0 +1,156 @@
+section.first
+  header.header
+    .container
+      .header__body
+        a(href="#!").header__logo
+          img(src="assets/img/header/svg/logo.svg",alt="img")
+        nav.header__menu.menu
+          i.icon-close2.header__close
+          ul.menu__list
+            li.menu__item
+                a.menu__link(href="#!").menu__link--active KAINOS UŽKLAUSA
+            - 
+                    items = [
+                        { title: "ADRESO PASLAUGA ", url: "#!"},
+                        { title: "SIUNTOS", url: "#!"},
+                        { title: "TRANSPORTAS", url: "#!"},
+                        { title: "APIE MUS", url: "#!"},
+                        { title: "KONTAKTAI", url: "#!"},
+                      ]
+            each item in items
+              li.menu__item
+                a.menu__link(href=item.url)=item.title
+        .header__info.info
+          .info_search
+            input(type='text' placeholder='SIUNTOS SEKIMAS')
+            i.icon-search
+  
+        i.icon-menu.header__burger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //- section.bunner
+  //-   .slider.slider-js-1
+  //-       .bunner__body
+  //-         .bunner__title
+  //-           h1._f700  Apsipirk Londone <br> neįlipęs į lėktuvą
+  //-           img(src="assets/img/header/png/dec-2.png",alt="img").bunner__dec-2
+  //-         .bunner__text Prekių užsakymas iš Jungtinės Karalystės
+  //-           p Pirkti dar niekada nebuvo taip paparasta!
+  //-         a(href="#!").bunner__link Gauti adresą
+  //-           i.icon-i-1
+  //-           img(src="assets/img/header/png/dec-3.png",alt="img").bunner__dec-3
+
+  //-         .bunner__low.bunner-low
+  //-             .bunner-low__buttons
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Prekių Pirkimas
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Adreso Paslauga
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Siuntimas
+      
+  //-       .bunner__body
+  //-         .bunner__title
+  //-           h1._f700  Apsipirk Londone <br> neįlipęs į lėktuvą
+  //-           img(src="assets/img/header/png/dec-2.png",alt="img").bunner__dec-2
+  //-         .bunner__text Prekių užsakymas iš Jungtinės Karalystės
+  //-           p Pirkti dar niekada nebuvo taip paparasta!
+  //-         a(href="#!").bunner__link Gauti adresą
+  //-           i.icon-i-1
+  //-           img(src="assets/img/header/png/dec-3.png",alt="img").bunner__dec-3
+
+  //-         .bunner__low.bunner-low
+  //-             .bunner-low__buttons
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Prekių Pirkimas
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Adreso Paslauga
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Siuntimas
+      
+  //-       .bunner__body
+  //-         .bunner__title
+  //-           h1._f700  Apsipirk Londone <br> neįlipęs į lėktuvą
+  //-           img(src="assets/img/header/png/dec-2.png",alt="img").bunner__dec-2
+  //-         .bunner__text Prekių užsakymas iš Jungtinės Karalystės
+  //-           p Pirkti dar niekada nebuvo taip paparasta!
+  //-         a(href="#!").bunner__link Gauti adresą
+  //-           i.icon-i-1
+  //-           img(src="assets/img/header/png/dec-3.png",alt="img").bunner__dec-3
+
+  //-         .bunner__low.bunner-low
+  //-             .bunner-low__buttons
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Prekių Pirkimas
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Adreso Paslauga
+  //-               a(href="#!").btn.btn--empty.bunner-low__button Siuntimas
+      
+      
+  //- img(src="assets/img/header/png/dec-1.png",alt="img").bunner__dec-1
+  //- .bunner__lang.bunner-lang
+  //-       a(href="#!").bunner-lang__link
+  //-         img(src="assets/img/header/svg/uk.svg",alt="img")
+  //-       a(href="#!").bunner-lang__link
+  //-         img(src="assets/img/header/svg/lt.svg",alt="img")
+
+  //- section.bunner.bunner--contacts
+  //-   .container
+  //-     .bunner--contacts__body
+  //-       .bunner__col
+  //-         .bunner__pre-title  BIG7EXPRESS
+  //-         .bunner__title
+  //-           h1 TURITE KLAUSIMŲ?
+
+  //-       .bunner__col.connect
+  //-         form.connect__form
+  //-           .connect__form-item
+  //-             input#name(type='text' required='' placeholder=' ')
+  //-             label(for='name') Vardas
+  //-           .connect__form-item
+  //-             input#phone(type='phone' required='' placeholder=' ')
+  //-             label(for='phone') TEL. NUMERIS
+  //-           .connect__form-item
+  //-             input#email(type='email' required='' placeholder=' ')
+  //-             label(for='email') EL. PAŠTAS
+  //-           .connect__form-item
+  //-             textarea#message(type='text' required='' placeholder=' ' wrap="off")
+  //-             label(for='message') Žinutė
+  //-             ._mark
+  //-           .form__submit-button
+  //-             button#submit-button.btn.btn--success SIŪSTI
+     
+
+  section.bunner.bunner--about
+    .container
+      .bunner__body
+        .bunner__title
+          h1  KODĖL VERTA RINKTIS MUS?
+        .bunner__items
+          .bunner__item
+            .bunner__img
+              img(src="assets/img/about/svg/i-1.svg",alt="img")
+            .bunner__text 
+              p Greitas pristatymas.
+              p Pristatysime per 5-7 darbo dienas.
+          .bunner__item
+            .bunner__img
+              img(src="assets/img/about/svg/i-2.svg",alt="img")
+            .bunner__text 
+              p Jokios rizikos.
+              p Visos siuntos yra apdraustos.
+          .bunner__item
+            .bunner__img
+              img(src="assets/img/about/svg/i-3.svg",alt="img")
+            .bunner__text 
+              p Geriausi kainos pasiūlymai.
+              p JK parduotuvių siūlomos nuolaidos.
+
+

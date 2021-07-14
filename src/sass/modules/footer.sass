@@ -1,0 +1,172 @@
+.footer
+  margin: 100px 0 0 0
+  color: white
+  padding: 50px 0 70px 0
+  min-height: 907px
+  +fdc
+  +juce
+  +background-img('/assets/img/footer/png/footer.png')
+  
+  background-position: 50% 272px 
+  position: relative
+  @media (min-width: 0px) and (max-width: 1199px)
+    margin: 6rem 0 0 0
+.footer__title
+  margin: 0 0 90px 0
+  h2
+    font-size: 60px
+    +f700
+    
+    @media (min-width: 768px) and (max-width: 1199px)
+      text-shadow: 1px 1px 5px #0a142f
+      font-size: 5vw
+.footer__body
+  +grid(65px)
+  grid-template-columns: repeat(4, auto)
+  justify-content: start
+  margin: 0 0 50px 0
+  z-index: 10
+
+  @media (max-width: 1199px) 
+    grid-template-columns:  1fr
+  
+.footer__img
+  width: 47.8%
+  max-width: 667px
+  // height: 667px
+  position: absolute
+  right: 25px
+  top: 0
+.footer-item__line
+  font-size: 15px
+  margin: 15px 0 0  0
+  line-height: 1
+  color: white
+  @media (min-width: 0px) and (max-width: 1199px)
+    text-shadow: 1px 1px 2px #0a142f
+
+@media (max-width: 767px) 
+  .letter__pre-title
+    font-size: 15px
+  .letter__title
+    font-size: 20px
+    margin: 25px 0 
+  .letter__form
+    +fdc 
+    +alic
+    input 
+      width: 100%
+      height: 63px
+      font-size: 12px
+      border-radius: 20px
+      &::placeholder
+        font-size: 12px
+  .letter__form 
+    button 
+      width: 70%
+      height: 63px
+      border-radius: 20px
+      font-size: 12px
+      margin: 10px 0 0 0
+  .letter__form 
+    label
+      font-size: 15px
+  .letter__form input[type=checkbox]:checked+label:before, .letter__form input[type=checkbox]:not(:checked)+label:before 
+    top: 50%
+    width: 20px
+    height: 20px
+    transform: translate(0,-50%)
+
+  .letter__form
+    width: 100%
+
+  .letter__form input[type=checkbox]:checked+label:after, .letter__form input[type=checkbox]:not(:checked)+label:after
+    top: 50%
+    transform: translate(0,-60%) rotate(-45deg)
+    left: 4px
+
+
+.footer-item__title
+  font-size: 15px
+  +f700
+  color: white
+  z-index: 10
+  line-height: 1
+  margin: 2px 0 26px
+  @media (min-width: 768px) and (max-width: 1199px) 
+    
+    text-shadow: 1px 1px 5px #0a142f
+  
+  @media (max-width: 767px) 
+    font-size: 15px
+    text-shadow: 1px 1px 5px #0a142f
+
+
+.footer-item__description
+  // margin: 25px 0 0px 0
+  z-index: 10
+  @media (max-width: 767px) 
+    font-size: 1.5rem
+.footer__copyright
+  font-size: 15px
+  margin: 45px 40px 0 auto
+  letter-spacing: .015rem
+
+.footer__low
+  +jucb	
+  +alic
+
+.footer__soc
+  +jucb
+  align-self: flex-end
+  .soc__item
+    width: 38px
+    height: 38px
+    border-radius: 50%
+    +border(1px, rgba(225,225,225, .4))
+    +center
+    transition: all 0.2s ease-in-out
+    margin: 0 15px 0 0
+    &:last-child
+      margin: 0 0 0 0
+    &:hover
+      border-color: $active
+      i
+        color: $active
+    i
+      font-size: 14px
+      color: white
+      transition: all 0.2s ease-in-out
+
+
+
+ 
+
+@media (min-width: 600px) and (max-width: 767px) 
+  .footer__img
+    width: 280px
+    right: 0
+    top: 14%
+
+@media (max-width: 767px)
+  .footer__title
+    margin: 0 0 45px 0
+    h2
+      text-shadow: 1px 1px 5px #0a142f
+      font-size: 30px
+  .footer__soc
+    margin: 20px 0 0 0
+    align-self: start
+  .footer__copyright
+    margin: 20px 0 0 0
+  .footer__low
+    +fdc
+    +alis
+
+@media (max-width: 599px) 
+  .footer__img
+    display: none
+ 
+
+
+

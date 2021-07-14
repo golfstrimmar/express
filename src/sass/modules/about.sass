@@ -1,0 +1,183 @@
+.call
+  margin: -192px 0 0 0
+.call__wrapper
+  +bg($active)
+.call__body
+  +jucb	 
+  +alic
+  padding: 37px 0
+.call__img
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
+  background-color: $white
+  border-radius: 50%
+  width: 88px
+  height: 88px
+  +center
+.call 
+  .fdc
+    min-height: 88px
+    +jucb	
+.call__title
+  +f700
+  font-size: 25px
+.call__text
+  font-size: 15px
+.call__button
+  width: 240px
+  height: 70px
+  border-radius: 74px
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2)
+  background-color: $white
+  color: $black
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) 
+  .call 
+    .fdc
+      flex: 0 1 50%
+  .call__button
+    width: 200px 
+    height: 60px
+    font-size: 15px
+
+
+@media (max-width: 767px) 
+  .call
+    .fdc
+      flex: 0 1 100%
+  .call__img
+    transform: scale(.8)
+  .call__body
+    +jucc	 
+  .call__button
+    width: 150px 
+    height: 50px
+    font-size: 15px
+    margin: 20px 0 0 0
+ 
+  .call__text,.call__title
+    text-align: center
+    margin: 20px 0 0 0
+
+
+// ----------------------------------------------
+.schema
+  &__wrapper
+    +background-img('/assets/img/about/png/schema.png')
+    padding: 0 0 72px 0
+.schema__pre-title 
+  color: $active
+  text-align: center
+  padding: 98px 0 0px 135px
+.schema__title
+  text-align: center
+  margin: 13px 0 0 0 
+  h2
+    +f700
+    font-size: 40px
+.schema__body
+  margin: 67px 0 0 0
+  +grid(70px )
+  +columns(repeat(3, 315px))
+  justify-content: space-between
+  row-gap:  54px
+.schema-item__title
+  margin: 15px 0 0 0
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .schema__body
+    margin: 40px 0 0 0
+    +grid(50px )
+    +columns(repeat(2, 1fr))
+    row-gap:  40px
+
+@media (max-width: 767px)
+  .schema__pre-title
+    padding: 50px 0 0px 27px
+    font-size: 15px
+  .schema__title
+    h2
+      font-size: 20px
+  .schema__body
+    margin: 30px 0 0 0
+    +grid(30px )
+    +columns( 1fr)
+  .schema-item
+    +alic
+    +fdc
+  .schema-item__title
+    font-size: 14px
+    text-align: center
+
+
+// ------------------------------------------
+.team__title
+  h2
+    font-size: 40px  
+
+#team
+  .slider-card
+    &__img
+      min-height: 268px
+      width: 100%
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+    &__title
+      font-size: 15px
+    &__name
+      font-size: 25px
+      position: relative
+
+      &:after
+        content: ""
+        background-color: $active
+        position: absolute
+        width: 175px
+        height: 3px
+        left: 0%
+        bottom: 0
+        z-index: 2
+        // top: 100% 
+        // left: 100%
+        // top: 50% 
+        // left: 50%
+        // right: 0%
+        // @include anim(0.2s)
+        // @include rotate(45deg)
+        // transform: translate(-50%,-50%)
+        // transform: translate(-50%,-50%) rotate(45deg)
+  .slider 
+    margin: 0 -35px
+    padding: 0 0 0 0
+    .slick-slide
+      margin: 0 35px 0 
+  .slider__body
+    margin: 0 0 0 0
+    +bg(transparent)
+    color: $black
+
+  .slider-card__title
+    margin: 20px 0 0 0
+  .slider-card__name 
+    padding: 10px 0 10px 0
+  .slider-card__soc
+    +alic
+    margin: 30px 0 0 0
+  .soc__link
+    font-size: 14px
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0 0 0 0
+
+
+
+
+
+
+
+
+
+
+    

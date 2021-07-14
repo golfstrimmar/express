@@ -1,0 +1,71 @@
+.trans
+  +background-img('/assets/img/trans/png/trans.png')
+  padding: 302px 0 262px
+  &__body
+    +jucb	
+
+.trans-item
+  flex: 0 1  43%
+  &:last-child
+    flex: 0 1 34.3%
+
+  &__title
+    margin: 0 0 34px 0
+    h3
+      color: $active
+      +f700
+      font-size: 30px
+      text-transform: uppercase
+      letter-spacing: .001rem
+  &__text
+    // margin:  0 0 70px 0
+    min-height: 124px
+    line-height: 26px
+  &__button
+    width: 349px
+    height: 73px
+    font-size: 20px
+    border-radius: 47px
+    background: rgba(0,0,0,0)
+    border: 2px solid #acd037
+    position: relative
+
+
+ 
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .trans-item
+    &__title
+      min-height: 60px
+    &__text
+      min-height: 150px
+ 
+
+@media (max-width: 767px) 
+  .trans
+    padding: 150px  0
+  .trans__body
+    +fdc
+  .trans-item
+    margin: 0 0 50px 0
+    &:last-child
+      margin: 0 0 0 0
+    &__title
+      min-height: 40px
+      margin: 0px 0 0 0
+      h3
+        font-size: 20px
+    &__text
+      margin: 20px 0
+      min-height: 50px
+      font-size: 15px
+    &__button
+      margin: 0 0 0 0
+      width: auto
+      height: 50px
+      font-size: 15px
+
+ 
+
+
+

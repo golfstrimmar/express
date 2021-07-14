@@ -1,0 +1,123 @@
+.cost
+  color: $black
+  padding: 55px 0 0 0
+.cost__title
+  text-align: center
+  h2
+    +f700
+    font-size: 30px
+    
+.cost__body
+  +fdc
+  position: relative
+  margin: 20px 0 0 0
+  ._mark
+    position: absolute
+    width: 20px
+    height: 20px
+    left: 50%
+    z-index: 2
+    transform: translate(-50%,0%)
+    background-color: #9d9d9d
+    border-radius: 50%
+    z-index: 4
+  ._mark--1
+    top: 68px
+  ._mark--2
+    top: 295px
+  ._mark--3
+    top: 525px
+  ._mark--4
+    top: 756px
+  ._mark--5
+    top: 973px
+    
+
+  &:after
+    content: ""
+    background-color: $active
+    position: absolute
+    width: 2px
+    height: 86%
+    top: 35px 
+    left: 50%
+    z-index: 2
+    transform: translate(-50%,0%)
+
+
+.cost-item:nth-child(2n)
+  .cost-item__body
+    margin: 0 0 0 422px
+    // &:after
+    //   left: -71px
+
+  img
+    display: block
+    margin: 0 auto 0 0 
+.cost-item:nth-child(2n+1)
+  background-color: #f2f2f2
+  .cost-item__body
+    margin: 0 0 0 -425px
+    // &:after
+    //   right: -70px
+  img
+    display: block
+    margin: 0 0 0 auto
+.cost-item
+  width: 100vw
+  height: 230px
+  +jucc
+  +alic	
+  &__body
+    width: 302px
+    +jucc	
+    +fdc
+    position: relative
+  img
+  p
+    font-size: 20px
+    margin: 29px 0 0 0
+    line-height: 26px
+
+
+
+ 
+
+@media (min-width: 0px) and (max-width: 1199px)
+  .cost__body ._mark 
+    left: 30px
+  .cost-item:nth-child(2n),.cost-item:nth-child(2n+1)
+    .cost-item__body
+      margin: 0 0 0 0
+      // &:after
+      //   right: -70px
+      img
+        margin: 0 auto 0 0
+
+  .cost__body:after 
+    left: 30px
+
+  .cost-item:nth-child(2n) .cost-item__body:after, .cost-item:nth-child(odd) .cost-item__body:after
+    right: auto
+    left: calc((100vw-317px)/-2 + 22px)
+  .cost__item
+    height: 180px
+  .cost-item__body 
+    img
+      transform: scale(.7)
+    p
+      font-size: 16px
+      margin: 0 0 0 0
+
+@media (max-width: 500px)
+  .cost__body ._mark 
+    left: 30px
+  .cost-item__body 
+    width: 200px!important
+  .cost-item__body:after
+    right: auto!important
+    left: calc((100vw-317px)/-2 -47px)!important
+  // .cost__body:after 
+  //   left: 20px!important
+
+

@@ -1,0 +1,157 @@
+// ==========form ===============
+.connect__form 
+  &-item 
+    position: relative
+    margin-bottom: 100px
+    label 
+      position: absolute
+      top: 0
+      left: 0
+      transition: 0.3s
+      transform: translateY(0)
+      pointer-events: none
+      width: 100%
+    input, textarea 
+      width: 100%
+      outline: none
+      border: 1px solid transparent
+      background-color: transparent
+      background-repeat: no-repeat
+      background-position: 100% 5px
+      border-bottom: 2px solid white
+      height: 30px
+      resize: none
+      color: white
+      font-size: 15px
+      padding: 3px 0 7px 10px
+      overflow: hidden
+      &:focus + label, &:not(:placeholder-shown) + label, &:-webkit-autofill + label 
+        transform: translateY(-34px)
+  
+
+    textarea 
+      height: 30px
+      position: relative
+      padding: 3px 0 26px 10px
+
+    ._mark
+        content: ""
+        position: relative
+        background-color: white
+        position: absolute
+        width: 15px
+        height: 1px
+        bottom: 11px
+        right: 0
+        z-index: 2
+        transform: rotate(-45deg)
+        &:after
+          content: ""
+          background-color: white
+          position: absolute
+          width: 6px
+          height: 1px
+          top: 4px 
+          left: 4px
+          z-index: 2
+  @media (max-width: 767px) 
+    padding-bottom: 100px
+  @media (max-width: 576px) 
+    padding-bottom: 40px
+
+/* ------------------------ */
+.connect__form-item input:focus + label
+  transform: translateY(-34px)
+
+
+.connect__form-item textarea:focus + label
+  transform: translateY(-34px)
+
+.connect__form-item input:not(:placeholder-shown) + label
+  transform: translateY(-34px)
+
+
+.connect__form-item textarea:not(:placeholder-shown) + label
+  transform: translateY(-34px)
+
+.connect__form-item input:-webkit-autofill + label
+  transform: translateY(-34px)
+
+.connect__form-item textarea:-webkit-autofill + label
+  transform: translateY(-34px)
+
+/* -------------------------------------- */
+
+.connect__form-item input::-webkit-input-placeholder, .connect__form-item textarea::-webkit-input-placeholder 
+  color: transparent
+  
+
+.connect__form-item input::-moz-placeholder, .connect__form-item textarea::-moz-placeholder 
+  color: transparent
+.connect__form-item input:-ms-input-placeholder, .connect__form-item textarea:-ms-input-placeholder 
+  color: transparent
+.connect__form-item input:-moz-placeholder, .connect__form-item textarea:-moz-placeholder 
+   color: transparent
+.connect__form-item input:not(:placeholder-shown):invalid, .connect__form-item textarea:not(:placeholder-shown):invalid 
+  color: #fa333c
+  border-bottom: 1px solid #fa333c
+  // background-image: url("warning.svg")
+  // font-size: 15px
+// .connect__file-add 
+//   margin-top: 92px
+//   padding-bottom: 15px
+//   border-bottom: 1px solid #d8d8d8
+//   cursor: pointer
+//   height: 33px
+// .connect__file-add 
+//   input
+//     opacity: 0
+// .connect__file-add 
+//   label
+//     top: 33px
+
+@media (max-width:767px) 
+  .connect__form
+    .form__submit-button 
+      button
+        width: 100%
+
+// .connect__form
+//     .custom-file 
+//       display: flex
+//       justify-content: flex-end
+//       align-items: center
+//       flex-direction: row
+//       height: 33px
+//       input 
+//         opacity: 0
+//         visibility: hidden
+//         position: absolute
+//         left: 0
+//         pointer-events: none
+//         font-size: 15px
+//         line-height: 25px
+//         font-weight: 400
+//         z-index: 5
+//       label 
+//         transform: translateY(0) 
+//         font-size: 19px
+//         line-height: 25px
+//         font-weight: 400
+
+//       &__lb 
+//         display: inline-block
+//         width: 100%
+//         height: 24px
+//         border: none
+//         position: relative
+//         margin: 0
+//         &.close 
+//           width: 24px
+//         &:before 
+//           transform: rotate(405deg)
+//         .bg 
+//             width: 27px
+//             height: 27px
+//             left: 100%
+//             transform: translate(-120%)

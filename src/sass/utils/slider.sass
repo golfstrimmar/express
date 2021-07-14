@@ -1,0 +1,190 @@
+// -------------------стили всего слайдера------------------------------------
+
+.slider__slider
+  // display: grid
+
+  // grid-template-columns:  1fr
+  // grid-template-rows:  1fr
+  // grid-gap: 18px
+  // height: 100vh
+  // @media (max-width: 1199px)
+  // @media (max-width: 767px)
+
+.slider__content
+  width: 100%
+
+.slider__body
+  margin: 0 -10px
+  // min-height: 100vh
+.slider__item
+  padding: 0 20px	0px
+
+
+// ------------------служебные стили слайдера--------------------
+.slider
+  .slick-slide
+    margin: 0 10px 
+    // min-height: 100vh
+
+    
+    @media (min-width: 768px) and (max-width: 1199px) 
+     margin: 0 30px
+    
+  .slider__body
+    +pro
+    min-height: 400px
+    +bg(blue)
+
+  .slick-arrow
+    position: relative
+    position: absolute
+    top:50%
+    transform: translateY(-50%)
+    z-index: 20
+    font-size: 0
+    border-radius: 50%
+    transition: all 0.2s ease-in-out
+    width: 52px
+    height: 44px
+    background: #fff
+    border-radius: 6px
+    &::after
+      font-family: icomoon
+      position: absolute
+      font-size: 20px
+      width: 20px
+      height: 20px
+      top: 50% 
+      left: 50%
+      z-index: 22
+      transform: translate(-50%,-50%)
+      color: $active
+      transition: all 0.2s ease-in-out
+    &:hover
+      cursor: pointer
+      opacity: .5
+      &::after
+        opacity: .8
+  .slick-prev
+    left: -67px
+    &::after
+      content: '\e90e'
+      // content: '\e90c'
+  .slick-next
+    right: -67px
+    &::after
+      content: '\e910'
+      // content: '\e91a'
+
+  // .slick-dots
+  //   position: absolute
+  //   bottom: -50px
+  //   left: 50%
+  //   transform: translateX(-50%)
+  //   +jucc
+  //   li
+  //     margin: 0 10px
+  //     font-size: 0
+  //     width: 20px
+  //     height: 20px
+  //     border-radius: 50%
+  //     +bg($purple)
+  //     transition: all 0.2s ease-in-out
+  //     &:hover
+  //       cursor: pointer
+  //       +bg( lighten($purple, 30%) )  
+  //   li.slick-active
+  //     +bg(transparent)
+  //     +border(3px ,$purple )
+  
+
+
+
+.slick-dots 
+    position: relative
+    +absolute( auto, auto, null, null, 148px,0,0)
+    bottom:  355px
+    @media (min-width: 768px) and (max-width: 1199px) 
+      right: 30px
+    @media (min-width: 401px) and (max-width: 767px) 
+      right: 30px
+      top: auto
+      bottom: 200px
+    @media (max-width: 400px)
+      display: none!important
+    &:after
+      content: ""
+      background-color: rgba(194, 194, 194, 0.62)
+      position: absolute
+      width: 6px
+      height: 100%
+      top: 0% 
+      right: 0%
+      border-radius: 6px
+.slick-dots li
+  padding: 0 20px 0 0
+  +alic
+  +juce
+  border-right: 6px solid transparent
+
+.slick-dots li:nth-child(2n) 
+  // border-right: 6px solid #c2c2c2
+  position: relative
+  &:after
+    content: ""
+    background-color: #c2c2c2
+    position: absolute
+    width: 6px
+    height: 100%
+    top: 0% 
+    right :-6px
+    z-index: 2
+    // top: 100% 
+    // left: 100%
+    // top: 50% 
+    // left: 50%
+    // right: 0%
+    // @include anim(0.2s)
+    // @include rotate(45deg)
+    // transform: translate(-50%,-50%)
+    // transform: translate(-50%,-50%) rotate(45deg)
+
+.slick-dots li:nth-child(2n).slick-active 
+  // border: none
+
+.slick-dots li.slick-active
+  position: relative
+  &:after
+    content: ""
+    background-color: white
+    position: absolute
+    width: 10px
+    height: 100%
+    top: 0% 
+    right: 0
+    z-index: 2
+    border-radius: 10px
+    transform: translate(8px,0%)
+
+.slick-dots li button
+  +bg(transparent)
+  +f700
+  font-size: 30px
+  color: white
+  width: 85px
+  height: 78px
+  // padding: 0 10px 0 0
+  margin: 0 0 0 0
+  text-align: right
+  @media (min-width: 401px) and (max-width: 767px)
+    font-size: 20px
+
+.slick-dots li.slick-active button
+    z-index: 2
+    font-size: 60px
+    // margin: 0 0 0 5px
+    +f700
+    text-align: right
+    margin: 0 0 0 0
+    @media (min-width: 401px) and (max-width: 767px)
+      font-size: 40px

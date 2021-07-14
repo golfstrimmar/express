@@ -1,0 +1,98 @@
+.letter
+.letter__wrapper
+  +background-img('/assets/img/letter/png/bg.png')
+  padding: 48px 0 0 0
+.letter__body
+  +fdc
+  +alic
+  
+.letter__pre-title 
+  color: $active
+.letter__title
+  margin: 37px 0 34px 0
+  h2
+    +f700
+    font-size: 25px
+.letter__decor
+  width: 133px
+  height: 3px
+  +bg($active)
+.letter__form
+  margin: -3px 0 0 0
+
+.letter__form
+  border-radius: 20px
+  max-width: 702px
+  padding: 39px 0 49px
+  +jucc	
+  .letter-form__item
+    flex: 0 1 100%
+    margin: 35px 0 0 0
+  input
+      width: 437px
+      height: 109px
+      font-size: 17px
+      background-color: $white
+      color: #c9c9c9
+      +f700
+      padding: 0 0 0 30px
+      border-radius: 20px 0px 0px 20px
+      &::placeholder
+        color: #c9c9c9
+        +f700
+        font-size: 20px
+        transition: all 0.2s ease-in-out
+  button
+      width: 265px
+      height: 109px
+      color: white
+      +bg($active)
+      border-radius: 0px 20px 20px 0px
+  .letter-form__item
+    +alic
+  input[type="checkbox"]:checked,
+  input[type="checkbox"]:not(:checked)
+    position: absolute
+    left: -9999px
+  label
+    display: inline-block
+    position: relative
+    padding-left: 28px
+    transition: all 0.2s ease-in-out
+    padding: 0 0 0 41px 
+    &:hover
+      cursor: url("/assets/img/cursor.svg"), pointer
+      color: $active
+
+  input[type="checkbox"]:checked + label:before,
+  input[type="checkbox"]:not(:checked) + label:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 0px
+    width: 26px
+    height: 26px
+    border-radius: 4px
+    background-color: white
+
+    
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after
+    content: ""
+    position: absolute
+    transition: all 0.2s ease
+
+  input[type="checkbox"]:checked + label:after,
+  input[type="checkbox"]:not(:checked) + label:after
+    left: 7px
+    top: 7px
+    width: 13px
+    height: 10px
+    border-radius: 1px
+    border-left: 4px solid $active
+    border-bottom: 4px solid $active
+    transform: rotate(-45deg)
+
+  input[type="checkbox"]:not(:checked) + label:after
+    opacity: 0
+
