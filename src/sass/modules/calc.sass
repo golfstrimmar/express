@@ -1,0 +1,132 @@
+.calc
+    &__links 
+        +jucs
+    &__item
+        margin: 0 120px 0 0
+
+    &__link
+        color: white
+        
+        &:last-child  
+            margin: 0
+    &__button
+      width: 227px
+      height: 77px
+      border-radius: 15px
+    .connect__form 
+      margin: 53px 0 0
+      .connect__form-item 
+          input
+              height: 50px
+              padding: 3px 0 5px 0px
+    .jucs 
+        margin: 53px 0 102px
+        .ord-form__title-big
+            padding: 0  0 25px 0 
+            margin: 0 0 0 0
+    .ord-form__block
+        margin: 50px 0 0 0
+        +alic
+        input
+            
+            &::placeholder
+              color: white
+              transition: all .2s aesy-in-out
+            &:focus
+                &::placeholder
+                    color: transparent
+            +f500
+            font-size: 25px
+        span
+            margin: 0 0 0 50px
+    .ord-form__line
+        .calc__button
+            width: 354px
+            height: 65px
+            border-radius: 20px
+            margin: 50px 0 0 0
+            box-shadow: 0 4px 4px 0 rgba(172, 208, 55, 0.2)
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .calc__item 
+    margin: -22px 60px 0 0
+  .calc__link
+      font-size: 18px
+  .calc .ord-form__block 
+      span
+          font-size: 18px
+  .calc__button 
+    width: 200px
+    height: 60px
+    font-size: 15px
+  .calc 
+      .jucs 
+          .ord-form__title-big
+              font-size: 20px
+              padding: 0 0 15px 0
+      .ord-form__line
+        .calc__button
+            height: 55px
+
+      .ord-form__block:last-child
+              flex: 0 1 354px
+  
+@media (max-width: 767px)
+    
+  .ord__title
+        h2
+            line-height: 50px
+  .calc__links
+      +fdc
+      +jucb
+  .calc__item 
+    margin: -22px 60px 30px 0
+
+  .calc__link
+      font-size: 18px
+  .calc .ord-form__block 
+      span
+          font-size: 18px
+  .calc__button 
+    width: 200px
+    height: 60px
+    font-size: 15px
+  .calc 
+      .jucs 
+          .ord-form__title-big
+              font-size: 20px
+              padding: 0 0 15px 0
+      .ord-form__line
+        .calc__button
+            height: 55px
+
+@media (min-width: 501px) and (max-width: 767px)
+  .calc
+    .ord-form__block:last-child
+              flex: 0 1 354px
+
+@media (max-width: 500px)
+    .calc 
+        .ord-form__block
+            +fdc
+            span 
+                margin: 20px 0 0 0
+        .ord-form__line 
+            .calc__button
+                width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

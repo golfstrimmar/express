@@ -24,11 +24,10 @@ section.first
           .info_search
             input(type='text' placeholder='SIUNTOS SEKIMAS')
             i.icon-search
-  
         i.icon-menu.header__burger
 
 
-  section.bunner.bunner-order.ord
+  section.bunner.bunner-order.ord.price
     .container
         .bunner__body
           .ord__title
@@ -36,7 +35,117 @@ section.first
           form.ord__form.ord-form
             .ord-form__title Siuntėjo informacija
             .ord-form__range
-            .ord-form__title-big Address
+              .ord-form__green
+            .connect__form
+              .ord-form__block
+                .ord-form__title-big Address
+                .ord-form__line
+                  .connect__form-item
+                    input#name(type='text' required='' placeholder='ppp')
+                    label(for='name') Street Address
+                  .connect__form-item
+                    input#text1(type='text' required='' placeholder='pp')
+                    label(for='text1') ZIP / Postal Code
+              .jucs
+                .ord-form__block
+                  .ord-form__title-big  El. pašto adresas*
+                  .ord-form__line 
+                      .connect__form-item
+                        input#email(type='email' required='' placeholder='pp')
+                        label(for='email') Vardas@pastas.lt
+                .ord-form__block
+                  .ord-form__title-big  Tel. nr.
+                  .ord-form__line
+                      .connect__form-item
+                        input#phone(type='phone' required='' placeholder='pp')
+                        label(for='phone') +370 600 00000
+              .jucs
+                .fdc
+                  .ord-form__title-big  Nuoroda į produktą (URL)*
+                  .ord-form__line 
+                        .connect__form-item
+                          span +
+                          input#text2(type='text' required='' placeholder='pp')
+                          .connect__description Įrašykite nuorodą į jūsų norimo produkto pirkimo puslapį. (Pvz.: amazon, ebay, ir t.t.)
+                a(href="#!").btn.btn--success.ord__button--large Gauti Pasiūlymą
+             
+  //- section.bunner.bunner-order.ord.calc
+  //-   .container
+  //-       .bunner__body
+  //-         .ord__title
+  //-           h2 SIUNTOS KAINOS SKAIČIUOKLĖ
+  //-         form.ord__form.ord-form
+  //-           .ord-form__title Siuntiniai
+  //-           .ord-form__range
+  //-             .ord-form__green
+  //-           .connect__form
+  //-             ul.calc__links 
+  //-               li.calc__item
+  //-                 a(href="#!").calc__link  Siuntos tipas
+  //-               li.calc__item
+  //-                 a(href="#!").calc__link  Plotis
+  //-               li.calc__item
+  //-                 a(href="#!").calc__link  Aukštis
+  //-               li.calc__item
+  //-                 a(href="#!").calc__link  Ilgis
+  //-               li.calc__item
+  //-                 a(href="#!").calc__link  Svoris
+  //-             .ord-form__block
+  //-               a(href="#!").calc__button.btn.btn--success Pridėti siuntinį 
+  //-               span There are no siuntiniai.
+  //-             .jucs
+  //-               .ord-form__block
+  //-                 .ord-form__title-big  Nested forms count
+  //-                 .ord-form__line 
+  //-                     .connect__form-item
+  //-                       input#count(type='text' required='' placeholder='0')
+  //-                       a(href="#!").btn.btn--success.calc__button Siuntėjo informacija 
+             
+       
+
+
+  //- section.bunner.bunner-order.ord
+  //-   .container
+  //-       .bunner__body
+  //-         .ord__title
+  //-           h2 Paėmimas iš
+  //-         form.ord__form.ord-form
+  //-           .ord-form__title Siuntėjo informacija
+  //-           .ord-form__range
+  //-             .ord-form__green
+  //-           .connect__form
+  //-             .ord-form__block
+  //-               .ord-form__title-big Address
+  //-               .ord-form__line
+  //-                 .connect__form-item
+  //-                   input#name(type='text' required='' placeholder=' Denzel Washington')
+  //-                   label(for='name') Street Address
+  //-                 .connect__form-item
+  //-                   input#email(type='email' required='' placeholder=' thebestmail@mail.com')
+  //-                   label(for='email') ZIP / Postal Code
+  //-                 .connect__form-item
+  //-                   .block__select
+  //-                       select.select
+  //-                         option(value='Country' disabled ) Country
+  //-                         option(value='usa' ) usa
+  //-                         option(value='uk') uk
+  //-                         option(value='Russia') Russia
+  //-                         option(value='Somali') Somali
+  //-                         option(value='Uganda') Uganda
+  //-                       i.icon-i-1.block__icon
+  //-             .jucs
+  //-               .ord-form__block
+  //-                 .ord-form__title-big  El. pašto adresas*
+  //-                 .ord-form__line 
+  //-                     .connect__form-item
+  //-                       input#email(type='email' required='' placeholder=' thebestmail@mail.com')
+  //-                       label(for='email') Vardas@pastas.lt
+  //-               .ord-form__block
+  //-                 .ord-form__title-big  Tel. nr.
+  //-                 .ord-form__line
+  //-                     .connect__form-item
+  //-                       input#email(type='email' required='' placeholder=' thebestmail@mail.com')
+                        //- label(for='email') +370 600 00000
               
        
 

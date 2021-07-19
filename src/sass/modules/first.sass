@@ -25,8 +25,6 @@
   height: 80px
   background-color: rgba(0, 0, 0, 0.4)
 
-
-
 // =======================================================
 
 .header__body
@@ -35,14 +33,13 @@
   +pro
   display: grid
   grid-template-columns: 214px 1fr minmax(184px, auto)
-  grid-template-rows:  100%
+  grid-template-rows: 100%
   grid-template-areas: "logo menu info"
-  
 
   @media (max-width: 1199px)
     grid-template-columns: 180px 1fr minmax(184px, auto)
   @media (max-width: 768px)
-    margin: 0 
+    margin: 0
 //-------------
 .header__burger
   display: none
@@ -63,9 +60,9 @@
   margin: 0 45px 0 0
   position: relative
   grid-area: menu
-  @media (min-width: 1001px) and (max-width: 1199px) 
-   margin: 0 20px 0 0
-  
+  @media (min-width: 1001px) and (max-width: 1199px)
+    margin: 0 20px 0 0
+
   @media (max-width: 1000px)
     width: 100vw
     min-height: 100vh
@@ -93,7 +90,6 @@
     &:hover
       cursor: pointer
 
-
 .menu-active
   @media (max-width: 1000px)
     transform: translateX(0)
@@ -105,7 +101,6 @@
   @media (max-width: 1000px)
     +fdc
     +alie
-    
 .menu__item
   +alic
   height: 100%
@@ -129,7 +124,7 @@
     margin: 0 0 20px 0
     &:last-child
       margin: 0 0 30px 0
-    
+
 .menu__link
   +alic
   height: 100%
@@ -142,18 +137,12 @@
   @media (max-width: 1199px)
     font-size: 12px
 
-
 .menu__link--active
   +bg($active)
   color: white
-  
-  
-.menu__link--active:hover 
-    color: white
 
-
-
-
+.menu__link--active:hover
+  color: white
 
 .header__info
   grid-area: info
@@ -161,7 +150,7 @@
   +alic
   +jucb
   @media (max-width: 1199px)
-    padding: 0 0 0 0	
+    padding: 0 0 0 0
     +fdc
     +jucc
     flex-wrap: nowrap
@@ -197,20 +186,8 @@
     color: #181818
     font-size: 15px
     +absolute(auto,auto,50%,28px,auto,0%,-50%)
-
-
-  @media (max-width: 1199px)
-   
   @media (max-width: 767px)
     margin: 10px 0 0 0
-
-
-
-// -------------------------------------------
-
-
-
-
 
 .bunner
   min-height: 100vh
@@ -224,7 +201,7 @@
   position: relative
   @media (min-width: 768px) and (max-width: 1000px)
     padding: 231px 300px 295px 75px
-  @media (max-width: 767px) 
+  @media (max-width: 767px)
     padding: 80px 30px 200px 50px
     min-height: 100vh
 
@@ -234,16 +211,15 @@
     font-size: 60px
     line-height: 87px
     color: $white
-    @media (min-width: 768px) and (max-width: 1000px) 
+    @media (min-width: 768px) and (max-width: 1000px)
       font-size: 40px
       line-height: 67px
     @media (max-width: 767px)
       font-size: 30px
       line-height: 50px
 
-
 .bunner__text
-  margin:  30px 0
+  margin: 30px 0
   color: white
   font-size: 25px
   @media (min-width: 768px) and (max-width: 1000px)
@@ -267,14 +243,14 @@
     padding-top: 10px
     width: 183px
     +alic
-    +jucb	
+    +jucb
     margin: 79px 0 0 0
     position: relative
     @media (min-width: 768px) and (max-width: 1000px)
       font-size: 18px
       padding-bottom: 7px
       width: 150px
-    @media (max-width: 767px) 
+    @media (max-width: 767px)
       font-size: 15px
       width: 120px
       margin: 50px 0 0 0
@@ -287,7 +263,7 @@
       font-size: 15px
 .bunner__low
   width: 100vw!important
-  border-top:  1px solid white
+  border-top: 1px solid white
   position: absolute
   height: 180px!important
   left: -10px
@@ -302,21 +278,20 @@
     padding: 0 0 0 0
 .bunner-low__buttons
     +alic
-    +jucb	
+    +jucb
     width: calc(100vw - 270px)!important
     margin: 0 auto
-    @media (min-width: 1200px) and (max-width: 1400px) 
+    @media (min-width: 1200px) and (max-width: 1400px)
       width: 100%!important
       margin: 0 10px
     @media (min-width: 768px) and (max-width: 1199px)
       margin: 0
-      width: 100%!important 
+      width: 100%!important
     @media (max-width: 767px)
       +fdc
       +jucs
       +alis
       width: 100%!important
-
 
 .bunner-low__button
   width: 260px
@@ -342,32 +317,31 @@
   @media (min-width: 768px) and (max-width: 1000px)
     width: 200px
   @media (min-width: 300px) and (max-width: 767px)
-    width:  200px
+    width: 200px
     margin: 10px 0
     height: 40px
     font-size: 15px
     margin: 10px auto
   @media (max-width: 299px)
     height: 40px
-    width:  200px
+    width: 200px
     font-size: 15px
     margin: 10px auto
 
-
   &:hover
-    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, 0.25) 
+    box-shadow: 4px 4px 7px 0 rgba(0, 0, 0, 0.25)
     +f700
     &:after
-      opacity:1
+      opacity: 1
 
 .bunner-lang
-  +jucb	
+  +jucb
   width: 75px
   position: absolute
   right: 156px
   @media (min-width: 1200px)
-    bottom: 205px!important 
-  @media (min-width: 768px) and (max-width: 1199px) 
+    bottom: 205px!important
+  @media (min-width: 768px) and (max-width: 1199px)
     right: 30px
     bottom: 166px
   @media (max-width: 767px)
@@ -376,12 +350,11 @@
     top: auto
     bottom: 200px
 
-
 .bunner__dec-1
   position: absolute
   top: 65px
   right: calc((100vw-1170px)/2 + -88px)
-  @media (max-width: 1420px) 
+  @media (max-width: 1420px)
     display: none
 .bunner__dec-2
   position: absolute
@@ -406,24 +379,20 @@
     top: -70px
   @media (min-width: 0px) and(max-width: 767px)
     display: none !important
-     
-   
-  
-
 
 // -----------------------
 .bunner--contacts
   +background-img("/assets/img/contacts/png/bunner-contacts.png")
   &__body
     padding: 255px 0 0 0
-    +jucb	
+    +jucb
   .bunner__pre-title
     +f700
     color: $active
     text-align: right
   .bunner__title
     margin: 5px 0 0 0
-    
+
     h1
       +f700
       font-size: 40px
@@ -444,11 +413,9 @@
     height: 30px
     label
       font-size: 15px
-      color : white
+      color: white
 
-
-
-@media (min-width: 768px) and (max-width: 1199px) 
+@media (min-width: 768px) and (max-width: 1199px)
   .bunner__col
     &:last-child
       flex: 0 1 40%
@@ -457,12 +424,11 @@
       +columns( 1fr)
     .connect__form-item
       margin-bottom: 34px
-  .bunner--contacts__body 
+  .bunner--contacts__body
     padding: 233px 0 0
 
- 
-@media (max-width: 767px) 
-  .bunner--contacts__body 
+@media (max-width: 767px)
+  .bunner--contacts__body
     padding: 200px 0 0
     max-width: 486px
     +fdc
@@ -473,13 +439,10 @@
     .connect__form-item
       margin-bottom: 34px
 
-  .bunner--contacts 
-    .bunner__title 
-      h1 
+  .bunner--contacts
+    .bunner__title
+      h1
         font-size: 30px
- 
-
-
 
 // --------------------------------------
 .bunner--about
@@ -497,16 +460,16 @@
     +grid(100px)
     +columns(repeat(3, auto))
     margin: 39px 0 0 0
-  .bunner__text 
-    margin:  0
+  .bunner__text
+    margin: 0
     p
       +f700
       margin: 0 0 0 0
 
 @media (max-width: 767px)
   .bunner--about
-      .bunner__items
-        +columns(1fr!important)
+    .bunner__items
+      +columns(1fr!important)
       .bunner__body
         padding: 108px 0 0 0
       .bunner__title
@@ -523,9 +486,6 @@
         height: 40px
         img
           +pro
-      .bunner__text 
+      .bunner__text
         p
           margin: -5px 0 0 0
-
-
- 

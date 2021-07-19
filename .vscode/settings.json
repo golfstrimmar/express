@@ -1,0 +1,14 @@
+{
+    "notebook.editorOptionsCustomizations": null,
+    // отключает все подсказказки
+    "editor.hover.enabled": false,
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#9A1E39",
+        "editor.selectionHighlightBackground": "#5E91B8"
+    },
+    "editor.letterSpacing": 2,
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": true,
+    "files.autoSave": "afterDelay",
+    "editor.cursorWidth": 1,
+}
