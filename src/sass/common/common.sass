@@ -62,4 +62,212 @@ a
   display: block
 
 
+  
+// ----------------добавления 29.07-------------------------
+.bunner--service  
+  min-height: 810px
+  +bg(red)
+  position: relative
+  margin: 0 0 0 0
+  .container
+    position: relative
+    z-index: 2
 
+.bunner-bg
+  position: absolute
+  width: 100%
+  height: 100%
+  padding: 0 0 10% 0
+  // z-index: 2
+
+.imgs
+  overflow: hidden
+  position: relative
+  position: absolute
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+    object-position: top
+    position: absolute
+    top: 0
+    left: 0
+
+
+
+
+
+
+
+
+
+
+// .bunner--service убрал margin: 0 0 50px 0
+  // .bunner-item 
+  //   margin: 0 0 50px
+  // .bunner-item:nth-child(2) 
+  //   margin: 0 0 50px
+
+
+
+
+
+// ------buy-------
+.buy
+  margin: 0 0 50px 0
+  .container
+    position: relative
+    z-index: 2
+.buy__wrapper
+  +bg(rgba(0, 0, 0, 0.5))
+  min-height: 810px
+  position: relative
+
+.buy__body
+  padding: 160px 0 0 0
+
+.buy__bg
+  +pro
+  padding: 0 0 810px 0
+.buy__title 
+  max-width: 410px
+  h2
+    +f700
+    font-size: 40px
+    line-height: 1
+
+.buy__button
+  width: 261px
+  height: 61px
+  border-radius: 47px
+  font-size: 15px
+  text-transform: uppercase
+  +f700
+  margin: 0 0 0 42px
+
+.buy__items
+  +grid(25px)
+  +columns(repeat(5, 17.8%))
+  justify-content: space-between
+  position: relative
+  margin: 72px 0 102px 0
+  padding: 0 47px
+  &:after
+    content: ''
+    position: absolute
+    +bg(white)
+    width: 80%
+    height: 1px
+    bottom: 45px
+    left: 50%
+    transform: translate(-50%,0%  ) 
+
+.buy__num
+  flex-grow: 1
+  +alie
+  z-index: 2
+  position: relative
+  span
+      width: 91px
+      height: 91px
+      border-radius: 50%
+      +bg(white)
+      +center
+      color: $black
+      font-size: 40px
+      +f500
+      line-height: 0.63
+      letter-spacing: 3.2px
+
+.buy__text
+  font-size: 22px
+  +f500
+  line-height: 1.14
+  letter-spacing: 1.76px
+  text-align: center
+.buy__item
+  min-height: 184px
+  +fdc
+  +alic
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .buy__text
+    font-size: 15px
+  .buy__items
+    padding: 0 20px
+    grid-template-columns: repeat(5,16.8%)
+  .buy__num
+    span
+        width: 80px
+        height: 80px
+        font-size: 30px
+  .buy__button
+    margin: 0 0 0 20px
+
+@media (max-width: 767px) 
+  .bunner-item:nth-child(2) 
+      margin: 20px 0 20px
+  .bunner-item 
+    margin: 0 0 0px
+  .bunner__items
+    margin: 0 0 50px 0
+  
+  
+  
+  
+  
+  
+  .buy__title 
+    max-width: 410px
+    h2
+      font-size: 30px
+      text-align: center
+  
+  .buy__items
+    +grid(0)
+    +columns(100%)
+    padding: 0 0 0 0
+    justify-items: center
+    margin: 70px 0 0 0
+    &:after
+      content: ''
+      position: absolute
+      +bg(white)
+      width: 1px
+      height: 83%
+      bottom: 59px
+      left: 26px
+      // transform: translate(-50%,0%  ) 
+  .buy__text
+    font-size: 14px
+    text-align: end
+    flex: 0 1 70%
+    padding: 10px 0 0 0
+  .buy__num
+    align-self: self-start
+    order: -1
+    flex-grow: 0
+    span
+        width: 50px
+        height: 50px
+        font-size: 25px
+  .buy__item
+    width: 100%
+
+  .buy__item
+    min-height: 100px
+    // +fdc
+    +alis
+    flex-direction: row
+    +jucb
+    flex-wrap: nowrap
+
+  .buy__body
+    padding: 100px 0 40px 0
+  .buy__button
+    width: 100%
+    max-width: 300px
+    margin: 0 auto
