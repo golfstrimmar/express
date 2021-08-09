@@ -1,0 +1,183 @@
+.bunner--single
+    .container
+        position: relative
+        z-index: 4
+    .bunner__body 
+        padding: 224px 0 0 0
+        +grid(50px)
+        +columns(588px 348px 1fr)
+    .bunner__slider
+        position: relative
+    .bunner__description
+      position: relative
+      z-index: 4
+      font-size: 15px
+      margin: 50px  166px 0  0
+      line-height: 27px
+.info-single__title
+  +f500
+  font-size: 20px
+.info-single__text
+    margin: 50px 0 0 0
+    p
+        font-size: 15px
+        +f500
+        margin: -2px 0 18px
+        line-height: 27px
+.bunner__buttons
+  margin: 0 0 0 -8px
+.bunner-buttons
+  &__data 
+      +bg($active) 
+      +alic
+      padding: 30px 0 9px
+      margin: 0 0 20px 0
+      +fdc
+  &__num
+    font-size: 30px
+    +f900
+    margin: 0 0 47px 0
+
+  &__month
+      +f500
+      font-size: 15px
+      margin: 0 0 6px 0
+  &__soc
+
+  &__item 
+    height: 30px   
+    margin: 0 0 5px 0
+    position: relative
+    
+    &:last-child
+        margin: 0 0 0 0
+    a
+      +alic
+      +pro
+      padding: 0 0 0 55px
+      color: white
+      &:hover
+        transform: scale(1.05)
+        
+      i
+        width: 13px
+        height: 13px
+        font-size: 13px
+        position: absolute
+        left: 20px
+        +center 
+
+      span
+        font-size: 12px
+        +f500
+.bunner-buttons__item--facebook
+    background-color: #3a5799
+.bunner-buttons__item--twitter
+    background-color: #01b1ec
+.bunner-buttons__item--pay
+    background-color: #dd252d
+#slider-single
+  .slider-card
+        padding: 0 0 384px 0
+        position: relative
+  .slider__body
+        padding: 0 0 0 0
+        margin: 0 0 0 0
+        max-height: 384px!important
+  .slick-slide 
+      margin: 0 
+      max-height: 384px
+
+  .slick-arrow
+    position: relative
+    position: absolute
+    top: auto
+    bottom: 0
+    transition: all 0.2s ease-in-out
+    transform: translate(0)
+    width: 60px
+    height: 64px
+    background: $active
+    border-radius: 0
+    &::after
+      font-size: 20px
+      width: 20px
+      height: 20px
+      color: white
+    &:hover
+      cursor: url("/assets/img/cursor.svg"), pointer
+      opacity: 1
+      &:after
+        color: darken($active, 20%)
+  .slick-prev
+    left: auto
+    right: 60px
+    &::after
+      content: '\e901'
+      transform: translate(0%,-50%) rotate(180deg)
+      // content: '\e90c'
+  .slick-next
+    right: 0
+    &::after
+      content: '\e901'
+      transform: translate(-100%,-50%)
+.single__soc
+    position: absolute
+    top: 0
+    left: -26px
+.single-soc 
+.single-soc__item
+    width: 26px
+    height: 26px
+    +center
+    i
+        height: 13px
+        font-size: 13px
+        color: white
+    &:hover
+      cursor: url("/assets/img/cursor.svg"), pointer
+      transform: scale(1.1)
+.single-soc__item--facebook
+  background-color: #3a5799     
+.single-soc__item--twit
+  background-color: #01b1ec
+.single-soc__item--share
+  background-color: #dd252d
+
+
+
+@media (min-width: 768px) and (max-width: 1260px)
+  .bunner--single
+    .bunner__body 
+        padding: 200px 0 0 0
+        +grid(50px)
+        +columns(  1fr 142px)
+        justify-content: space-between
+    .bunner__slider
+        grid-column: 1/3 
+        margin: 0 auto 40px   
+        max-width: 588px
+    .bunner__description
+        margin: 40px 0 50px 0   
+@media (max-width: 767px)
+  .bunner--single
+    .bunner__body 
+        padding: 150px 0 0 0
+        +grid(0)
+        +columns( 100%)
+    .bunner__slider
+        margin: 0 auto 40px   
+        max-width: 100%
+    .bunner__description
+        margin: 40px 0 50px 0  
+    .single__soc
+        +jucs
+        top: -26px
+        left: 0
+
+  .bunner-buttons
+      margin: 0 0 0 0
+      width: 142px
+      margin: 0 auto
+
+

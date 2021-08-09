@@ -118,6 +118,61 @@ $(Document).ready(function() {
             },
         ]
     });
+    $(".slider-js-new").show().slick({
+        // dots: false,
+        arrows: true,
+        slidesToShow: 4,
+        speed: 800,
+        easing: "ease",
+        // cssEase: "linear",
+        // centerMode: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        infinite: true,
+        //  initialSlide: 1,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+        responsive: [
+
+            {
+                breakpoint: 1260,
+                settings: {
+                    slidesToShow: 3,
+                    variableWidth: false,
+                },
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 2,
+                    variableWidth: false,
+                },
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                },
+            },
+        ]
+    });
+    $(".slider-js-single").show().slick({
+        // dots: false,
+        arrows: true,
+        slidesToShow: 1,
+        speed: 800,
+        easing: "ease",
+        // cssEase: "linear",
+        // centerMode: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        infinite: true,
+        //  initialSlide: 1,
+        pauseOnFocus: true,
+        pauseOnHover: true,
+     
+    });
 
 
 

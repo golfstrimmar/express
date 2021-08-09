@@ -1,0 +1,207 @@
+.bunner--tracking
+    .bunner__body
+        padding: 307px 0 204px 
+    .bunner__title
+      display: inline-block
+      h2
+          display: inline-block
+          font-size: 40px
+          +f700
+          letter-spacing: .1rem
+      p
+          font-size: 20px
+          text-align: right
+          color: $active
+          padding: 14px 0 0 0
+          letter-spacing: .01rem
+    .bunner__items
+        +grid(0px)
+        +columns(repeat(5,auto))
+        border-radius: 40px
+        // border:  1px solid  $active
+        height: 102px
+        margin: 143px 0 0 0
+        overflow: hidden
+        align-items: center
+        // +bg($active)
+    .bunner__item
+        +center
+        height: 100%
+        border-top: 5px solid $active
+        border-bottom: 5px solid $active
+        &.active 
+           +bg($active)
+        cursor: url("/assets/img/cursor.svg"), pointer
+        &:first-child
+           border-left: 5px solid $active
+           border-top-left-radius: 40px
+           border-bottom-left-radius: 40px
+        &:last-child
+           border-right: 5px solid $active
+           border-top-right-radius: 40px
+           border-bottom-right-radius: 40px      
+    .bunner__text
+        +alic  
+        margin: 0 0 0 0
+        span 
+          font-size: 16px
+          line-height: 1
+        img
+            height: 20px
+            margin: 0 0 0 10px
+        
+    .bunner__description 
+        margin: 50px 0 0 0
+        text-align: center
+
+
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .bunner--tracking
+    .bunner__body
+        padding: 200px 0 180px 
+    .bunner__title
+      h2
+          font-size: 30px
+      p
+          font-size: 15px
+    .bunner__items
+        height: 80px
+        margin: 80px 0 0 0
+    .bunner__text
+        span 
+          font-size: 14px
+        img
+            height: 15px
+            margin: 0 0 0 10px
+    .bunner__description
+        font-size: 18px
+@media (max-width: 767px)    
+  .bunner--tracking
+    .bunner__body
+        padding: 100px 0 100px 
+    .bunner__title
+      h2
+          font-size: 30px
+      p
+          font-size: 15px
+          text-align: left
+    .bunner__items
+        height: 80px
+        margin: 80px 0 0 0
+        +columns(1fr)
+        height: auto
+    .bunner__text
+        height: 80px
+        span 
+          font-size: 14px
+        img
+            height: 15px
+            margin: 0 0 0 10px
+    .bunner__description
+        font-size: 15px
+    .bunner__item
+        border: none
+        border-left: 5px solid $active
+        border-right: 5px solid $active
+        &:first-child
+           border-top: 5px solid $active
+           border-radius :0
+           border-top-left-radius: 40px
+           border-top-right-radius: 40px
+        &:last-child
+           border-radius :0
+           border-bottom: 5px solid $active
+           border-bottom-left-radius: 40px
+           border-bottom-right-radius: 40px   
+
+
+
+.treking
+  min-height: 577px
+  .container
+      position: relative
+      z-index: 2
+.treking__wrapper
+    padding: 0 0  577px
+    width: 100%
+.treking__title
+    h2
+      font-size: 40px
+      letter-spacing: .2rem
+      +f700
+.treking__body
+    padding: 107px 0 0 0
+.treking__text
+    margin: 65px 0 0 0
+    font-size: 17px
+    +f700
+    p
+        text-align: center
+        letter-spacing: .08rem
+.treking__address
+  margin:  193px 0  0 0
+  +jucb
+.treking__item
+    font-size: 25px
+    +f500
+    margin: 0 107px 0 0
+    letter-spacing: 2px
+    &:last-child
+        margin: 0 0 0 0
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px)
+    .treking
+      min-height: 500px
+  
+    .treking__wrapper
+        padding: 0 0  500px
+    .treking__title
+        h2
+          font-size: 30px
+    .treking__body
+        padding: 80px 0 0 0
+    .treking__text
+        margin: 50px 0 0 0
+        font-size: 15px
+    .treking__address
+      margin:  150px 0  0 0
+      +fdc
+      +jucc
+    .treking__item
+        font-size: 20px
+        +f500
+        margin: 0 
+        letter-spacing: 2px
+        &:last-child
+            margin: 0 0 0 0
+    
+@media (max-width: 767px)
+    .treking
+      min-height: 500px
+    .treking__title
+        h2
+          font-size: 25px
+          text-align: center
+    .treking__body
+        padding: 80px 0 0 0
+    .treking__text
+        margin: 50px 0 0 0
+        font-size: 15px
+    .treking__address
+      margin:  150px 0  0 0
+      +fdc
+      +jucc
+    .treking__item
+        font-size: 20px
+        +f500
+        margin: 0 
+        text-align: center
+        &:last-child
+            margin: 0 0 0 0
+
+
+

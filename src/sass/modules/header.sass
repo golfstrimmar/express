@@ -1,0 +1,183 @@
+.header
+  z-index: 1000
+  transition: all 0.2s ease-in-out
+  position: fixed
+  width: 100%
+  height: 115px
+  background-color: rgba(0, 0, 0, 0.4)
+  +alic
+  @media (max-width: 1199px)
+    height: 80px
+  @media (max-width: 768px)
+    height: 60px
+
+//-------------
+.responciveHeader
+  position: fixed
+  width: 100%
+  height: 80px
+  background-color: rgba(0, 0, 0, 0.4)
+
+// =======================================================
+
+.header__body
+  margin: 0 auto
+  position: relative
+  +pro
+  display: grid
+  grid-template-columns: 214px 1fr minmax(184px, auto)
+  grid-template-rows: 100%
+  grid-template-areas: "logo menu info"
+
+  @media (max-width: 1199px)
+    grid-template-columns: 180px 1fr minmax(184px, auto)
+  @media (max-width: 768px)
+    margin: 0
+//-------------
+.header__burger
+  display: none
+  &:hover
+    cursor: pointer
+  @media (max-width: 1000px)
+    font-size: 20px
+    display: inline-block
+    color: white
+    +absolute(20px,20px,50%,auto,0,0%,-50%)
+//-------------
+.header__logo
+  grid-area: logo
+  margin: 0 0 0 0
+  img
+    height: 100%
+.header__menu
+  margin: 0 45px 0 0
+  position: relative
+  grid-area: menu
+  @media (min-width: 1001px) and (max-width: 1199px)
+    margin: 0 20px 0 0
+
+  @media (max-width: 1000px)
+    width: 100vw
+    min-height: 100vh
+    position: fixed
+    top: 0
+    transform: translateX(-100vw)
+    left: 0
+    padding: 117px 20px 0 40px
+    overflow: auto
+    text-align: right
+    +fdc
+    +jucs
+    +alie
+    +bg(rgba(0,0,0,.95))
+    z-index: 1000
+    transition: all 0.2s ease-in-out
+
+.header__close
+  display: none
+  @media (max-width: 1000px)
+    display: block
+    +absolute(auto,auto,10px,auto,10px,0%,0%)
+    color: white
+    font-size: 20px
+    &:hover
+      cursor: pointer
+
+.menu-active
+  @media (max-width: 1000px)
+    transform: translateX(0)
+
+.menu__list
+  +alic
+  +jucb
+  height: 100%
+  @media (max-width: 1000px)
+    +fdc
+    +alie
+.menu__item
+  +alic
+  height: 100%
+  +border(1px , transparent)
+  transition: all 0.2s ease-in-out
+  &:hover
+    +bg(lighten($active,30%))
+    +border(1px , darken($active,10%)!important)
+    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    color: lighten($active,10%)
+    border-radius: 5px
+  &:focus
+    +border(1px , darken($active,10%)!important)
+    +bg(lighten($active,10%))
+    box-shadow: 0px 0px 20px lighten($dark-1,60%)!important
+    color: white
+    border-radius: 5px
+    &>span
+      color: white
+  @media (max-width: 1000px)
+    margin: 0 0 20px 0
+    &:last-child
+      margin: 0 0 30px 0
+
+.menu__link
+  +alic
+  height: 100%
+  padding: 0 5px
+  font-size: 15px
+  line-height: 19px
+  text-transform: uppercase
+  color: $white
+  border-radius: 5px
+  @media (max-width: 1199px)
+    font-size: 12px
+
+.menu__link--active
+  +bg($active)
+  color: white
+
+.menu__link--active:hover
+  color: white
+
+.header__info
+  grid-area: info
+.info
+  +alic
+  +jucb
+  @media (max-width: 1199px)
+    padding: 0 0 0 0
+    +fdc
+    +jucc
+    flex-wrap: nowrap
+  @media (max-width: 1000px)
+    display: none!important
+
+.info-active
+  @media (max-width: 1000px)
+    display: block!important
+    transition: all 0.2s ease-in-out
+    margin: 30px 0 0 0
+//-------------
+
+.info_search
+  +alic
+  position: relative
+  input
+    border-radius: 58px
+    box-shadow: inset 3px 3px 4px 0 rgba(0, 0, 0, 0.19)
+    background-color: $white
+    width: 184px
+    height: 36px
+    padding: 0 0 3px 20px
+    +alic
+    &::placeholder
+      font-size: 12px
+      height: 12px
+      color: $black
+      padding: 0px 0 0px 30px
+  input:focus
+    padding: 0 0 0px 20px
+  i
+    color: #181818
+    font-size: 15px
+    +absolute(auto,auto,50%,28px,auto,0%,-50%)
+  @media (max-width: 767px)
+    margin: 10px 0 0 0

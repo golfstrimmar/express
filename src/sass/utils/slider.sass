@@ -32,8 +32,6 @@
     
   .slider__body
     +pro
-    min-height: 400px
-    +bg(blue)
 
   .slick-arrow
     position: relative
@@ -68,12 +66,13 @@
   .slick-prev
     left: -67px
     &::after
-      content: '\e90e'
+      content: '\e901'
+      transform: translate(-50%,-50%) rotate(180deg)
       // content: '\e90c'
   .slick-next
     right: -67px
     &::after
-      content: '\e910'
+      content: '\e901'
       // content: '\e91a'
 
   // .slick-dots
